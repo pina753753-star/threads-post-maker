@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" role="img" aria-labelledby="title desc">
+  <title id="title">Codex投稿を考える絵本風イラスト</title>
+  <desc id="desc">机の上で小さなキャラクターが投稿アイデアを書いている、差し替え可能な仮画像です。</desc>
+  <rect width="760" height="480" rx="44" fill="#fff3d6"/>
+  <circle cx="116" cy="92" r="62" fill="#ffd978" opacity="0.86"/>
+  <circle cx="654" cy="96" r="78" fill="#c9eadf"/>
+  <circle cx="642" cy="360" r="106" fill="#ffe2d6"/>
+  <path d="M80 356c72-48 116-44 180-10 57 30 116 24 168-8 83-50 160-43 252 24v70H80z" fill="#c9eadf"/>
+  <rect x="138" y="252" width="486" height="46" rx="23" fill="#b98662"/>
+  <rect x="188" y="296" width="28" height="94" rx="14" fill="#8f6449"/>
+  <rect x="544" y="296" width="28" height="94" rx="14" fill="#8f6449"/>
+  <rect x="258" y="154" width="244" height="152" rx="22" fill="#fffdf7" stroke="#d8b991" stroke-width="8"/>
+  <path d="M288 196h184M288 232h154M288 268h102" stroke="#f08a6c" stroke-width="13" stroke-linecap="round"/>
+  <path d="M188 208c-30-44-6-102 46-102s76 58 46 102z" fill="#f08a6c"/>
+  <circle cx="234" cy="162" r="42" fill="#ffd7bf"/>
+  <circle cx="219" cy="158" r="5" fill="#3f3328"/>
+  <circle cx="250" cy="158" r="5" fill="#3f3328"/>
+  <path d="M222 178c12 10 25 10 36 0" fill="none" stroke="#3f3328" stroke-width="5" stroke-linecap="round"/>
+  <path d="M182 252c16-42 86-42 104 0v42H182z" fill="#7ec9b6"/>
+  <path d="M488 111l25 34 41-10-25 35 24 35-40-12-26 33 1-42-39-14 40-12z" fill="#ffd978" stroke="#d6a945" stroke-width="5"/>
+  <path d="M110 120c17-22 44-22 62 0M578 154c22-22 57-22 79 0" fill="none" stroke="#ca654a" stroke-width="9" stroke-linecap="round"/>
+  <text x="380" y="84" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="700" fill="#3f3328">Codex post ideas</text>
+</svg>
