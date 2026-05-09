@@ -9,71 +9,85 @@
 </head>
 <body>
   <main class="app-shell">
-    <section class="hero-card" aria-labelledby="page-title">
-      <div class="hero-badge">ぴなさん専用・投稿ネタメーカー</div>
-      <div class="hero-image-wrap">
-        <!-- 差し替え用画像：images/hero-codex-storybook.svg を同名ファイルで置き換えると反映されます。 -->
-        <img src="images/hero-codex-storybook.svg" alt="絵本風の机で、Codexの投稿アイデアを考えている小さなキャラクター" class="hero-image">
-      </div>
-      <h1 id="page-title">Codexの魅力を<br>やさしく届ける投稿を作ろう</h1>
-      <p class="hero-text">Codexを始める人・気になっている人に向けて、Threadsで使いやすい投稿ネタと文章案を自動で組み立てます。</p>
-      <!-- CTAリンク未入力のため仮リンクです。納品後、hrefの「#replace-cta-url」を実際のURLに差し替えてください。 -->
-      <a class="primary-cta" href="#replace-cta-url" aria-label="CTAリンクは後から差し替えてください">相談・導線リンクを入れる</a>
-    </section>
-
-    <section class="card intro-card" aria-labelledby="intro-title">
-      <p class="section-kicker">What is this?</p>
-      <h2 id="intro-title">初心者に伝わる言葉へ整える</h2>
-      <p>難しい専門用語をできるだけ避けて、「何ができるの？」「最初に何を試せばいい？」が伝わる投稿づくりをサポートします。</p>
-      <ul class="check-list">
-        <li>投稿テーマを選ぶだけで方向性が決まる</li>
-        <li>入力した一言から文章案を生成</li>
-        <li>絵本風のやさしいUIでスマホ操作しやすい</li>
-      </ul>
-    </section>
-
-    <section class="card maker-card" aria-labelledby="maker-title">
-      <p class="section-kicker">Make a post</p>
-      <h2 id="maker-title">投稿ネタを作る</h2>
-
-      <form id="postForm" class="post-form">
-        <label for="theme">投稿テーマ</label>
-        <select id="theme" name="theme">
-          <option value="firstStep">はじめてCodexを触る人へ</option>
-          <option value="benefit">Codexで助かること</option>
-          <option value="tips">つまずきにくい使い方</option>
-          <option value="story">自分の体験談風</option>
-        </select>
-
-        <label for="keyword">入れたい一言・キーワード</label>
-        <input id="keyword" name="keyword" type="text" maxlength="40" placeholder="例：READMEづくり、LP修正、最初の一歩">
-
-        <label for="tone">文章の雰囲気</label>
-        <select id="tone" name="tone">
-          <option value="gentle">やさしく背中を押す</option>
-          <option value="friendly">友だちに話すように</option>
-          <option value="clear">すっきり分かりやすく</option>
-        </select>
-
-        <button type="submit" class="generate-button">投稿案をつくる</button>
-      </form>
-    </section>
-
-    <section class="card result-card" aria-live="polite" aria-labelledby="result-title">
-      <div class="result-heading">
+    <header class="app-header" aria-labelledby="page-title">
+      <div class="brand-row">
+        <span class="app-icon" aria-hidden="true">✦</span>
         <div>
-          <p class="section-kicker">Result</p>
-          <h2 id="result-title">生成された投稿案</h2>
+          <p class="eyebrow">Threads post maker</p>
+          <h1 id="page-title">Codex投稿ネタメーカー</h1>
         </div>
-        <span class="soft-label">Threads向け</span>
       </div>
-      <article id="resultText" class="result-box">テーマを選んで「投稿案をつくる」を押すと、ここに文章案が表示されます。</article>
-      <button id="copyButton" class="copy-button" type="button">文章をコピー</button>
-      <p id="copyMessage" class="copy-message" role="status"></p>
+      <p class="lead-text">Codex初心者・気になっている人へ届ける投稿テーマと文章案を、スマホでさっと作れます。</p>
+    </header>
+
+    <section class="tool-grid" aria-label="投稿作成ツール">
+      <section class="card maker-card" aria-labelledby="maker-title">
+        <div class="section-title-row">
+          <div>
+            <p class="section-kicker">Input</p>
+            <h2 id="maker-title">投稿の材料を入れる</h2>
+          </div>
+          <span class="step-badge">1</span>
+        </div>
+
+        <form id="postForm" class="post-form">
+          <div class="field-group">
+            <label for="theme">投稿テーマ</label>
+            <select id="theme" name="theme">
+              <option value="firstStep">はじめてCodexを触る人へ</option>
+              <option value="benefit">Codexで助かること</option>
+              <option value="tips">つまずきにくい使い方</option>
+              <option value="story">自分の体験談風</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="keyword">入れたい一言・キーワード</label>
+            <input id="keyword" name="keyword" type="text" maxlength="40" placeholder="例：READMEづくり、LP修正、最初の一歩">
+          </div>
+
+          <div class="field-group">
+            <label for="tone">文章の雰囲気</label>
+            <select id="tone" name="tone">
+              <option value="gentle">やさしく背中を押す</option>
+              <option value="friendly">友だちに話すように</option>
+              <option value="clear">すっきり分かりやすく</option>
+            </select>
+          </div>
+
+          <button type="submit" class="generate-button">投稿をつくる</button>
+        </form>
+      </section>
+
+      <section class="card result-card" aria-live="polite" aria-labelledby="result-title">
+        <div class="section-title-row">
+          <div>
+            <p class="section-kicker">Output</p>
+            <h2 id="result-title">Threads投稿案</h2>
+          </div>
+          <span class="step-badge">2</span>
+        </div>
+
+        <div id="resultText" class="result-list">
+          <article class="post-card is-placeholder">
+            <div class="post-card-header">
+              <span class="avatar" aria-hidden="true">C</span>
+              <div>
+                <h3>生成待ち</h3>
+                <p>テーマを選んで「投稿をつくる」を押してください。</p>
+              </div>
+            </div>
+            <p class="post-body">ここに、Threadsへそのまま貼り付けやすい投稿文が3案表示されます。</p>
+          </article>
+        </div>
+
+        <button id="copyButton" class="copy-button" type="button">いちばん上の投稿をコピー</button>
+        <p id="copyMessage" class="copy-message" role="status"></p>
+      </section>
     </section>
 
     <section class="card guide-card" aria-labelledby="guide-title">
-      <p class="section-kicker">Beginner guide</p>
+      <p class="section-kicker">Guide</p>
       <h2 id="guide-title">投稿前のやさしい確認</h2>
       <div class="guide-grid">
         <div class="mini-card">
