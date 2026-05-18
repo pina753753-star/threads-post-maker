@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小さなお店の販促メーカー</title>
+  <meta name="description" content="小さなお店・個人事業主向けに、Instagram投稿文、チラシ文面、LINE配信文、LP構成、Canva見出しをまとめて作れるスマホ対応ツールです。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Shop Promo Maker</p>
+      <h1 id="page-title">小さなお店の<br>販促メーカー</h1>
+      <p class="lead">商品名・ターゲット・キャンペーンを入れるだけで、投稿文・チラシ文面・LINE文・LP構成・Canva見出しをまとめて作れます。</p>
+    </header>
+
+    <section class="card" aria-labelledby="input-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Input</p>
+          <h2 id="input-title">販促の材料を入れる</h2>
+        </div>
+        <span class="badge">1</span>
+      </div>
+
+      <form id="promoForm" class="promo-form">
+        <label class="field">
+          <span>業種</span>
+          <select id="industry" name="industry">
+            <option>カフェ</option>
+            <option>美容室</option>
+            <option>整体・サロン</option>
+            <option>ネイル</option>
+            <option>ハンドメイド</option>
+            <option>教室・スクール</option>
+            <option>食品通販</option>
+            <option>子ども服</option>
+            <option>その他</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>商品・サービス名</span>
+          <input id="product" name="product" type="text" value="季節限定スイーツセット">
+        </label>
+
+        <label class="field">
+          <span>届けたい人</span>
+          <input id="target" name="target" type="text" value="週末にゆっくり過ごしたい人">
+        </label>
+
+        <label class="field">
+          <span>悩み・きっかけ</span>
+          <textarea id="pain" name="pain">いつも同じお店ばかりで新鮮さがない</textarea>
+        </label>
+
+        <label class="field">
+          <span>得られる未来</span>
+          <textarea id="benefit" name="benefit">ちょっと特別な時間を楽しめる</textarea>
+        </label>
+
+        <label class="field">
+          <span>キャンペーン</span>
+          <input id="campaign" name="campaign" type="text" value="今週末だけドリンク1杯付き">
+        </label>
+
+        <div class="two-columns">
+          <label class="field">
+            <span>価格</span>
+            <input id="price" name="price" type="text" value="税込1,280円">
+          </label>
+
+          <label class="field">
+            <span>CTA</span>
+            <input id="cta" name="cta" type="text" value="予約する">
+          </label>
+        </div>
+
+        <div class="two-columns">
+          <label class="field">
+            <span>文章の雰囲気</span>
+            <select id="tone" name="tone">
+              <option>親しみやすい</option>
+              <option>やさしい</option>
+              <option>高級感</option>
+              <option>信頼感</option>
+              <option>おしゃれ</option>
+              <option>勢い重視</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>目的</span>
+            <select id="goal" name="goal">
+              <option>来店予約</option>
+              <option>商品購入</option>
+              <option>LINE登録</option>
+              <option>キャンペーン告知</option>
+              <option>認知拡大</option>
+              <option>問い合わせ</option>
+            </select>
+          </label>
+        </div>
+
+        <button class="generate-button" type="submit">販促文を作る</button>
+      </form>
+    </section>
+
+    <section class="card result-card" aria-labelledby="result-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Output</p>
+          <h2 id="result-title">生成結果</h2>
+        </div>
+        <span class="badge">2</span>
+      </div>
+
+      <div id="results" class="results" aria-live="polite"></div>
+      <p id="copyMessage" class="copy-message" role="status"></p>
+    </section>
+
+    <section class="notice">
+      <h2>使い方</h2>
+      <p>入力欄を書き換えると、業種別の販促文を作れます。薬機法や景品表示法に触れやすい表現を避けるため、効果の断定表現は控えめにしています。</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
